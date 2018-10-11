@@ -24,6 +24,7 @@ mainBlock.click(function(){
             'fontSize' : '1.5rem',
             'marginBottom': '10px'
         })
+        $(this).find('.flex-1 span').css('display','inline');
     }
 
 

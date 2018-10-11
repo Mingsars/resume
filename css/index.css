@@ -1,5 +1,5 @@
 :root{
-    --main-bgcolor:#333;
+    --main-bgcolor:#000;
     --main-color:#fff;
 }
 .container{
@@ -140,10 +140,10 @@
     transition: 1s;
 }
 #about .about-mainMsg{
-    margin-top: 50%;
+    margin-top: 20%;
     margin-left: 10%;
     margin-right: 10%;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
 }
 .about-mainMsg h1{
     font-size: 4rem;
@@ -159,6 +159,15 @@
 .about-mainMsg p b{
     text-transform: uppercase;
     font-size: 1.2em;
+}
+.mainMsg .iconfont{
+    font-size: 1.5em;
+}
+.about-mainMsg a{
+    color: #fff;
+}
+.about-mainMsg .flex-1 span{
+    display: none;
 }
 /* skill */
 #skill{
