@@ -133,17 +133,16 @@
 #forHome:checked~#production{
     top: 55%;left: 55%;
 }
+.mainMsg{
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 /* about */
 #about{
     width: 40%;height: 40%;
     opacity: 0;
     transition: 1s;
-}
-#about .about-mainMsg{
-    margin-top: 20%;
-    margin-left: 10%;
-    margin-right: 10%;
-    /* transform: translateY(-50%); */
 }
 .about-mainMsg h1{
     font-size: 4rem;
@@ -175,7 +174,11 @@
     opacity: 0;
     transition: 1s;
 }
-
+.skill-item{
+    list-style: disc;
+    font-size: 1em;
+    line-height: 1.5;
+}
 /* exp */
 #experience{
     width: 40%;height: 40%;

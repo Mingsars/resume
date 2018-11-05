@@ -16,8 +16,7 @@ mainBlock.click(function(){
     $(this).find('.mainMsg').css('display','block');  //显示主要内容
     $(this).find('.msg').css('display','none');     //隐藏简略信息
     //针对性设置
-    if($(this).index() == 2){
-        console.log(1);
+    if($(this).index() == 2){   //如果点击了about模块
         $(this).find('h1').css('fontSize','4rem');
         $(this).find('h4').css('fontSize','3rem');
         $(this).find('p').css({
@@ -25,6 +24,8 @@ mainBlock.click(function(){
             'marginBottom': '10px'
         })
         $(this).find('.flex-1 span').css('display','inline');
+    }else if($(this).index() == 3){     //如果点击了skill模块
+        $(this).find('.skill-item').css({'fontSize':'1.5rem',"lineHeight" : 2});
     }
 
 
