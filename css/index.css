@@ -50,9 +50,18 @@
     background: url('../image/bg1.jpg');
     background-size: cover;
 }
+.exp-back{
+    transform: translateX(0) !important;
+    transition: 2.5s;
+}
 @keyframes bigger{
     50%{
         transform: scale(1.5);
+    }
+}
+@keyframes bigger-min{
+    50%{
+        transform: scale(1.1);
     }
 }
 .mainBlock{
@@ -62,6 +71,7 @@
     background-color: var(--main-bgcolor);
     color: var(--main-color);
     width: 100%;height: 100%;
+    overflow: hidden;
 }
 .mainBlock .msg{
     display: none;
@@ -185,10 +195,59 @@
     opacity: 0;
     transition: 1s;
 }
-
+#experience .mainMsg{
+    margin-top: 10%;
+}
+.exp-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* height: 100%; */
+    overflow: hidden;
+}
+.exp-item{
+    flex: 1;
+    margin: 1% 0;
+    background: rgba(255,255,255,0.1);
+    height: 220px;
+    box-sizing: border-box;
+    padding: 2%;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
 /* pro */
 #production{
     width: 40%;height: 40%;
     opacity: 0;
     transition: 1s;
+}
+.pro-box{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pro-item{
+    width: 45%;height: 200px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    background: rgba(255,255,255,0.2);
+    padding : 2%;
+    font-size: 1.1em;
+    position: relative;
+}
+.pro-item span{
+    font-style: italic;
+    font-weight: 700;
+}
+.pro-item p{
+    line-height: 1.8;
+}
+.pro-item a{
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 5%;right: 5%;
+    animation: bigger-min 4s infinite;
+    display: none;
 }
