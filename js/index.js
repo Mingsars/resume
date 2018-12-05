@@ -1,3 +1,9 @@
+import $ from 'jquery'
+window.$ = $;
+window.jQuery =  $;
+
+import '../css/index.css'
+import '../css/reset.css'
 var About = $('#about'),
     Skill = $('#skill'),
     Experience = $('#experience'),
